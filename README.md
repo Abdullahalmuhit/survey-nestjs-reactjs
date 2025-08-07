@@ -1,41 +1,45 @@
-📝 Survey Form Project
-A full-stack application built using React.js (Frontend), NestJS (Backend), and MySQL (Database) to collect and manage survey responses.
+# 📝 Survey Form Project
 
-📌 Features
-Collect user inputs: Name, Age, Satisfaction Level, Suggestions.
+A full-stack application built using **React.js (Frontend)**, **NestJS (Backend)**, and **MySQL (Database)** to collect and manage survey responses.
 
-Save responses to a MySQL database.
+---
 
-View and manage submitted responses.
+## 📌 Features
 
-Delete a specific survey entry.
+- Collect user inputs: Name, Age, Satisfaction Level, Suggestions.
+- Save responses to a MySQL database.
+- View and manage submitted responses.
+- Delete specific survey entries.
+- Modular code structure with clean API integration.
 
-Modular code structure with clean API integration.
+---
 
-📁 Tech Stack
-Layer	Technology
-Frontend	React.js
-Backend	NestJS (Node.js)
-Database	MySQL
-HTTP Client	Axios
-ORM	TypeORM
+## 📁 Tech Stack
 
-🚀 Getting Started
-1. Clone the Repository
-   bash
-   Copy
-   Edit
-   git clone https://github.com/Abdullahalmuhit/survey-nestjs-reactjs
-   cd survey-form-app
-   ⚙️ Backend Setup (NestJS)
-   bash
-   Copy
-   Edit
-   cd backend
-   npm install
-   📄 Environment File
-   Create a .env file in the backend/ directory:
+| Layer     | Technology     |
+|-----------|----------------|
+| Frontend  | React.js       |
+| Backend   | NestJS (Node.js) |
+| Database  | MySQL          |
+| HTTP Client | Axios        |
+| ORM       | TypeORM        |
 
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Abdullahalmuhit/survey-nestjs-reactjs
+cd survey-nestjs-reactjs
+⚙️ Backend Setup (NestJS)
+bash
+Copy
+Edit
+cd backend
+npm install
+Create .env file in backend/
 env
 Copy
 Edit
@@ -44,7 +48,7 @@ DATABASE_PORT=3306
 DATABASE_USERNAME=root
 DATABASE_PASSWORD=yourpassword
 DATABASE_NAME=survey_db
-🏃 Start Backend Server
+Start the Backend Server
 bash
 Copy
 Edit
@@ -55,14 +59,14 @@ Copy
 Edit
 cd frontend
 npm install
-🔧 Configure API URL
-Make sure the Axios base URL in index.jsx or SurveyForm.jsx points to your backend:
+Configure API URL
+Update the Axios base URL in your frontend code (e.g., SurveyForm.jsx):
 
 js
 Copy
 Edit
-axios.defaults.baseURL = 'http://localhost:3000'; // adjust port as needed
-🏃 Start React App
+axios.defaults.baseURL = 'http://localhost:3000'; // Adjust port if needed
+Start the React App
 bash
 Copy
 Edit
@@ -71,32 +75,54 @@ npm start
 css
 Copy
 Edit
-survey-form-app/
+survey-nestjs-reactjs/
 ├── backend/
 │   ├── src/
 │   │   ├── survey/
 │   │   └── main.ts
-│   ├── .env
+│   └── .env
 ├── frontend/
 │   ├── src/
-│   │   ├── SurveyForm.jsx
-│   │   └── SurveyList.jsx
-│   ├── index.jsx
-├── README.md
+│   │   ├── pages/
+│   │   │   ├── SurveyForm.jsx
+│   │   │   └── SurveyList.jsx
+│   └── index.jsx
+└── README.md
 📬 API Endpoints
 Method	Endpoint	Description
-POST	/responses	Save survey response
+GET	/surveys/:id	Get a survey by ID
+POST	/responses	Submit survey response
 GET	/responses	Get all responses
 DELETE	/responses/:id	Delete a response
 
-📌 To-Do (optional)
-Add form validation.
+✅ To-Do (optional)
+ Add form validation
 
-Add pagination or filtering for survey list.
+ Add pagination/filtering
 
-Export responses to CSV or PDF.
+ Export responses to CSV/PDF
+
+ Add admin panel for managing surveys
 
 📄 License
 This project is licensed under the MIT License.
 
-Let me know if you'd like to include screenshots, deployment instructions (Docker, Vercel, etc.), or database schema details.
+🙋‍♂️ Author
+Abdullah Al Muhit
+
+GitHub: @Abdullahalmuhit
+
+yaml
+Copy
+Edit
+
+---
+
+### ✅ Result:
+This version is:
+- Cleanly structured
+- Markdown compliant
+- Readable on GitHub
+- Easy for contributors to follow
+
+Would you like a downloadable `.md` file version of this?
